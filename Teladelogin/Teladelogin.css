@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  height: 100vh;
+
+  background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.3);
+
+  z-index: -1;
+}
+
+.login-box {
+  width: 620px;
+  height: 500px;
+  background: #3a3a3a;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.header {
+  height: 140px;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  color: yellow;
+  font-size: 40px;
+  letter-spacing: 8px;
+}
+
+.conteudo {
+  padding: 30px;
+  color: white;
+}
+.conteudo h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 200px;
+  padding: 10px;
+
+  display: block;
+  margin: 20px auto;
+
+  border: 2px solid yellow;
+  background: transparent;
+  color: yellow;
+
+  cursor: pointer;
+}
+
+.extras {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.extras label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.extras a,
+.extras a:visited {
+  color: white;
+  text-decoration: none;
+}
