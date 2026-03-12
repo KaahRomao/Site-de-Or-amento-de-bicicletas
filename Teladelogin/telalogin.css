@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(Assets/c5785a46-b731-4ee1-a46d-61326d9b281f.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo preto transparente */
+  backdrop-filter: blur(8px); /* O efeito de desfoque do Figma */
+  z-index: 1000; /* Garante que fique acima de tudo */
+}
+
+article {
+  background-color: #292727;
+  border-radius: 30px;
+  height: 500px;
+  width: 620px;
+}
+
+header {
+  background-image: url(Assets/30dcf7b1-77f1-42b6-9f55-82439130aca5.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 120px;
+  border-radius: 30px 30px 0 0;
+}
+
+h1 {
+  text-align: center;
+  color: yellow;
+}
