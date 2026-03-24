@@ -1,27 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Jockey One", sans-serif;
-  font-weight: bold;
-  font-style: normal;
-}
-
 main {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  position: relative;
+}
+
+main::before {
+  content: " ";
+  position: absolute;
   background-image: url(Assets/c5785a46-b731-4ee1-a46d-61326d9b281f.jpeg);
+  inset: 0px;
+  filter: blur(10px);
   background-size: cover;
   background-position: center;
+  z-index: -1;
+}
+
+main::after {
+  content: " ";
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  position: absolute;
+  inset: 0px;
 }
 
 article {
   background-color: #292727;
   border-radius: 30px;
   width: 620px;
+  overflow: hidden;
 }
 
 header {
@@ -55,7 +65,7 @@ section label {
 
 section input {
   display: block;
-  border-radius: 30px;
+
   background-color: #d9d9d9;
   width: 100%;
   padding: 5px;
@@ -73,9 +83,8 @@ footer button {
   background-color: #636363;
   border: 2px solid #eeff00;
   color: #eeff00;
-  border-radius: 30px;
+
   padding: 15px 50px;
-  margin-bottom: 60px;
 }
 
 a {
