@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BYKE - Detalhes do Orçamento</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="sidebar-user">
+          <img src="Assets/icon-user.svg" alt="Ícone de usuário" />
+          <span>Kauê</span>
+          <a href="#" class="btn-logout">
+            <img src="Assets/logout.svg" alt="Sair" />
+          </a>
+        </div>
+
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="#">Clientes</a></li>
+            <li class="ativo"><a href="orcamentos.html">Orçamentos</a></li>
+            <li><a href="#">Pedidos</a></li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+          <img src="Assets/config.svg" alt="Configurações" />
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <h1>Detalhes do orçamento</h1>
+          <div class="topbar-status">
+            <span class="status andamento">Em andamento</span>
+          </div>
+          <span class="logo">BYKE</span>
+        </header>
+
+        <div class="detalhes-orcamento">
+          <p class="orcamento-info">
+            Orçamento #3801 — Data de criação: 09-05-2026
+          </p>
+
+          <div class="detalhes-colunas">
+            <section class="detalhes-cliente">
+              <h2>Cliente</h2>
+              <div class="campo-readonly">Alice Rodrigues Carvalho</div>
+              <div class="campo-readonly">11 99999-9999</div>
+              <div class="campo-readonly">Alice123@gmail.com</div>
+            </section>
+
+            <section class="detalhes-dados">
+              <h2>Dados</h2>
+              <div class="campo-readonly">BMX</div>
+              <div class="campo-readonly">ARO 29</div>
+              <div class="campo-readonly">Troca do pneu traseira</div>
+            </section>
+          </div>
+
+          <table class="tabela-itens">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Tipo</th>
+                <th>Qtnd.</th>
+                <th>Valor Unit.</th>
+                <th>Subtotal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pneu</td>
+                <td>Peça</td>
+                <td>1</td>
+                <td>R$ 115,00</td>
+                <td>R$ 115,00</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="detalhes-totais">
+            <div class="total-linha">
+              <span>Sub-total:</span>
+              <span>R$ 115,00</span>
+            </div>
+            <div class="total-linha">
+              <span>Desconto:</span>
+              <span>R$ 15,00</span>
+            </div>
+            <div class="total-linha total-final">
+              <span>TOTAL:</span>
+              <span>R$ 100,00</span>
+            </div>
+          </div>
+
+          <div class="detalhes-acoes">
+            <button type="button" class="btn-pdf">Gerar PDF</button>
+            <button type="button" class="btn-recusar">Recusar</button>
+            <button type="button" class="btn-aprovar">Aprovar</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

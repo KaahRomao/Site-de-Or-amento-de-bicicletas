@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BYKE - Dashboard</title>
+    <title>BYKE - Lista de Orçamentos</title>
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="dashboard.css" />
   </head>
@@ -20,9 +20,9 @@
 
         <nav class="sidebar-nav">
           <ul>
-            <li class="ativo"><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
             <li><a href="#">Clientes</a></li>
-            <li><a href="orcamentos.html">Orçamentos</a></li>
+            <li class="ativo"><a href="orcamentos.html">Orçamentos</a></li>
             <li><a href="#">Pedidos</a></li>
           </ul>
         </nav>
@@ -34,38 +34,23 @@
 
       <main class="main-content">
         <header class="topbar">
-          <h1>Dashboard</h1>
+          <h1>Lista de orçamentos</h1>
           <span class="logo">BYKE</span>
         </header>
 
-        <section class="cards">
-          <article class="card">
-            <div class="card-titulo">Orçamentos de hoje</div>
-            <div class="card-valor"></div>
-            <a href="#">Ver detalhes</a>
-          </article>
+        <div class="toolbar">
+          <a href="criar-orcamento.html" class="btn-novo">
+            <img src="Assets/plus.svg" alt="Adicionar" />
+            Novo orçamento
+          </a>
 
-          <article class="card">
-            <div class="card-titulo">Pendentes (mês)</div>
-            <div class="card-valor"></div>
-            <a href="#">Ver detalhes</a>
-          </article>
-
-          <article class="card">
-            <div class="card-titulo">Aprovados (mês)</div>
-            <div class="card-valor"></div>
-            <a href="#">Ver detalhes</a>
-          </article>
-
-          <article class="card">
-            <div class="card-titulo">Total orçado (mês)</div>
-            <div class="card-valor"></div>
-            <a href="#">Ver detalhes</a>
-          </article>
-        </section>
+          <div class="busca">
+            <img src="Assets/search.svg" alt="Buscar" />
+            <input type="text" placeholder="Buscar" />
+          </div>
+        </div>
 
         <section class="tabela">
-          <h2>Últimos orçamentos</h2>
           <table>
             <thead>
               <tr>
@@ -126,8 +111,62 @@
                 <td class="status cancelado">Cancelado</td>
                 <td><a href="detalhes.html">Ver</a></td>
               </tr>
+              <tr>
+                <td>7125</td>
+                <td>Julian Almeida Pinto</td>
+                <td>17-05-2026</td>
+                <td>R$ 2842</td>
+                <td class="status analise">Em análise</td>
+                <td><a href="detalhes.html">Ver</a></td>
+              </tr>
+              <tr>
+                <td>8458</td>
+                <td>Otávio Silva Souza</td>
+                <td>25-01-2026</td>
+                <td>R$ 2236</td>
+                <td class="status analise">Em análise</td>
+                <td><a href="detalhes.html">Ver</a></td>
+              </tr>
+              <tr>
+                <td>7313</td>
+                <td>Enzo Azevedo Goncalves</td>
+                <td>05-09-2026</td>
+                <td>R$ 2071</td>
+                <td class="status andamento">Em andamento</td>
+                <td><a href="detalhes.html">Ver</a></td>
+              </tr>
+              <tr>
+                <td>6733</td>
+                <td>Victor Martins Pereira</td>
+                <td>11-09-2026</td>
+                <td>R$ 1137</td>
+                <td class="status andamento">Em andamento</td>
+                <td><a href="detalhes.html">Ver</a></td>
+              </tr>
+              <tr>
+                <td>1838</td>
+                <td>Luan Martins Cardoso</td>
+                <td>14-11-2026</td>
+                <td>R$ 2377</td>
+                <td class="status cancelado">Cancelado</td>
+                <td><a href="detalhes.html">Ver</a></td>
+              </tr>
+              <tr>
+                <td>5963</td>
+                <td>Breno Pinto Pereira</td>
+                <td>26-02-2026</td>
+                <td>R$ 1617</td>
+                <td class="status entregue">Entregue</td>
+                <td><a href="detalhes.html">Ver</a></td>
+              </tr>
             </tbody>
           </table>
+
+          <nav class="paginacao">
+            <button>1</button>
+            <button>2</button>
+            <button>...</button>
+          </nav>
         </section>
       </main>
     </div>

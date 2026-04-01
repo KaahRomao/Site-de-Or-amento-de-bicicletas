@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BYKE - Criar Orçamento</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="sidebar-user">
+          <img src="Assets/icon-user.svg" alt="Ícone de usuário" />
+          <span>Kauê</span>
+          <a href="#" class="btn-logout">
+            <img src="Assets/logout.svg" alt="Sair" />
+          </a>
+        </div>
+
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="#">Clientes</a></li>
+            <li class="ativo"><a href="orcamentos.html">Orçamentos</a></li>
+            <li><a href="#">Pedidos</a></li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+          <img src="Assets/config.svg" alt="Configurações" />
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <h1>Criar orçamento</h1>
+          <span class="logo">BYKE</span>
+        </header>
+
+        <div class="form-orcamento">
+          <div class="form-grupo">
+            <label for="cliente">Cliente</label>
+            <select id="cliente" name="cliente">
+              <option value="">Selecionar cliente...</option>
+              <option>Alice Rodrigues Carvalho</option>
+              <option>Emilly Goncalves Cunha</option>
+              <option>Joao Santos Araujo</option>
+              <option>Kauã Oliveira Castro</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email do cliente"
+            />
+          </div>
+
+          <div class="form-grupo">
+            <label for="telefone">Telefone:</label>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              placeholder="Telefone do cliente"
+            />
+          </div>
+
+          <h2>Dados da bicicleta</h2>
+
+          <div class="form-linha">
+            <div class="form-grupo">
+              <label for="marca">Tipo | Marca</label>
+              <select id="marca" name="marca">
+                <option value="">Selecionar...</option>
+                <option>Caloi</option>
+                <option>BMX</option>
+                <option>OGGI</option>
+                <option>TSW</option>
+              </select>
+            </div>
+
+            <div class="form-grupo">
+              <label for="aro">Modelo | Aro</label>
+              <select id="aro" name="aro">
+                <option value="">Selecionar...</option>
+                <option>ARO 27</option>
+                <option>ARO 28</option>
+                <option>ARO 29</option>
+                <option>ARO 30</option>
+              </select>
+            </div>
+
+            <div class="form-grupo">
+              <label for="observacoes">Observações</label>
+              <textarea
+                id="observacoes"
+                name="observacoes"
+                placeholder="Observações"
+              ></textarea>
+            </div>
+          </div>
+
+          <h2>Itens do orçamento</h2>
+
+          <table class="tabela-itens">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Tipo</th>
+                <th>Qtnd.</th>
+                <th>Valor Unit.</th>
+                <th>Subtotal</th>
+                <th>Remover</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="6" class="linha-vazia">Nenhum item adicionado</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <button type="button" class="btn-adicionar">+ Adicionar item</button>
+
+          <div class="form-totais">
+            <div class="form-grupo">
+              <label>Desconto:</label>
+              <input type="text" placeholder="R$ 0,00" />
+            </div>
+            <div class="form-grupo">
+              <label>TOTAL:</label>
+              <input type="text" placeholder="R$ 0,00" readonly />
+            </div>
+          </div>
+
+          <div class="form-acoes">
+            <button type="button" class="btn-cancelar">Cancelar</button>
+            <button type="button" class="btn-salvar">Salvar Orçamento</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
